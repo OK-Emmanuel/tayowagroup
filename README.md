@@ -1,7 +1,4 @@
-
 # Tayowa.com School Website
-
-![enter image description here](https://drive.google.com/file/d/1nwXnKDC1JnKBbw-7KWQGl_2fTRwJV47d/view?usp=sharing)
 
 ## Table of Contents
 
