@@ -3,6 +3,7 @@
     --primary-color: #990073;
     --primary-variant: #c20755;
     --bg-white: #fff;
+    --bg-light: #ffeeff;
 }
 /*--------------------------------------------------------------
 # General
@@ -495,9 +496,10 @@ body {
     padding: 60px 0;
     overflow: hidden;
   }
-  
-  .section-bg {
-    background-color: #f6f7f6;
+
+.section-bg{
+    background-color: var(--bg-light);
+    color: var(--primary-color)
   }
   
   .section-title {
@@ -616,8 +618,8 @@ body {
   .counts .counters span {
     font-size: 48px;
     display: block;
-    color: var(--primary-color);
-    font-weight: 700;
+    color: var(--primary-variant);
+ 
   }
   
   .counts .counters p {
@@ -626,7 +628,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: #37423b;
+    color: cream;
   }
   
   /*--------------------------------------------------------------
@@ -818,17 +820,19 @@ body {
   }
   
   .trainers .member img {
-    margin: -1px -1px 30px -1px;
+    margin: 0;
   }
   
   .trainers .member .member-content {
-    padding: 0 20px 30px 20px;
+    background-color: var(--bg-light);
+    padding: 30px 20px 30px 20px;
   }
   
   .trainers .member h4 {
     font-weight: 700;
     margin-bottom: 2px;
     font-size: 18px;
+    color: var(--primary-variant);
   }
   
   .trainers .member span {
