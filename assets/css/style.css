@@ -19,7 +19,7 @@ body {
   }
   
   a:hover {
-    color: #86db9f;
+    color: var(--primary-variant);
     text-decoration: none;
   }
   
@@ -58,7 +58,7 @@ body {
   }
   
   .back-to-top:hover {
-    background: #7ed899;
+    background: var(--primary-variant);
     color: var(--bg-white);
   }
   
@@ -538,10 +538,10 @@ body {
   }
   
   .breadcrumbs {
-    margin-top: 73px;
+    margin-top: 100px;
     text-align: center;
     background: var(--primary-color);
-    padding: 30px 0;
+    padding: 20px ;
     color: var(--bg-white);
   }
   
@@ -1024,15 +1024,16 @@ body {
   }
   
   .course-details .course-info h5 {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
     margin: 0;
     font-family: "Poppins", sans-serif;
+    color: var(--primary-variant);
   }
   
   .course-details .course-info p {
     margin: 0;
-    font-weight: 600;
+    font-size: 14px;
   }
   
   .course-details .course-info a {
