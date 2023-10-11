@@ -222,7 +222,7 @@ body {
     
 
   }
-  .navbar a:hover{
+  .navbar a:not(.dropdown ul a):hover{
     scale: 1.2;
   }
   
@@ -271,7 +271,7 @@ body {
   
   .navbar .dropdown .dropdown ul {
     top: 0;
-    left: calc(100% - 30px);
+    /* left: calc(100% - 30px); */
     visibility: hidden;
   }
   
@@ -1604,4 +1604,22 @@ body {
     color: var(--bg-white);
     text-decoration: none;
     transform: translateY(-5px);
+  }
+
+  /* EXTRA STYLING */
+  .accordion-button{
+    background-color: var(--bg-light);
+  }
+
+  .accordion-button, .accordion-button:focus{
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .accordion-button:not(.collapsed){
+    background-color: var(--primary-variant);
+    color: white;
   }
