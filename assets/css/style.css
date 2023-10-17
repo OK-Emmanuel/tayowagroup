@@ -2,6 +2,7 @@
 :root{
     --primary-color: #990073;
     --primary-variant: #c20755;
+    --secondary-color: #0d63fd;
     --bg-white: #fff;
     --bg-light: #ffeeff;
 }
@@ -30,6 +31,20 @@ body {
   h5,
   h6 {
     font-family: "Poppins", sans-serif;
+  }
+
+  ::-moz-selection { /* Code for Firefox */
+    color: var(--bg-white);
+    background: var(--primary-variant);
+  }
+  
+  ::selection {
+    color: var(--primary-color);
+    background: var(--bg-light);
+  }
+
+  main{
+    margin: 0 20px;
   }
 
   
@@ -415,7 +430,7 @@ body {
   
   #hero:before {
     content: "";
-    background: rgba(51, 3, 78, 0.74);
+    background-image: linear-gradient(to right, rgba(51, 3, 78, 0.74), rgba(146, 3, 82, 0.74)) ;
     position: absolute;
     bottom: 0;
     top: 0;

@@ -32,13 +32,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style type="text/css">
-    body {
-      margin-top: 20px;
-    }
-
     /* .modal-dialog {} */
     .thumbnail {
-      margin-bottom: 6px;
+      margin-bottom: 14px;
     }
 
     .carousel-control-prev,
@@ -46,6 +42,21 @@
       background-image: none;
       margin-top: 10%;
       width: 5%;
+    }
+    img{
+      border: 10px solid rgb(255, 212, 234);
+      /* border-radius: 15px 0px ; */
+      background-color: yellow;
+      position: relative;
+    }
+    img::before{
+      content: "";
+      position: absolute;
+      background-color: red;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
     }
   </style>
 </head>
@@ -92,35 +103,50 @@
     </div>
   </header><!-- End Header -->
 
-  </head>
-
-  <!-- <div class="container bootdey">
-  <div class="row">
-    <h1>Bootstrap 5 Lightbox using Modal</h1>
-    <div class="row">
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Image 1" href="#"><img class="thumbnail img-fluid" src="https://www.bootdey.com/image/600x350/6495ED/000000"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Image 2" href="#"><img class="thumbnail img-fluid" src="https://www.bootdey.com/image/600x350/5F9EA0/000000"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Image 3" href="#"><img class="thumbnail img-fluid" src="https://www.bootdey.com/image/600x350/DC143C/000000"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Image 4" href="#"><img class="thumbnail img-fluid" src="https://www.bootdey.com/image/600x350/FF7F50/000000"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Image 5" href="#"><img class="thumbnail img-fluid" src="https://www.bootdey.com/image/600x350/008B8B/000000"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Image 6" href="#"><img class="thumbnail img-fluid" src="https://www.bootdey.com/image/600x350/00FFFF/000000"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Image 8" href="#"><img class="thumbnail img-fluid" src="https://www.bootdey.com/image/600x350/FF1493/000000"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Image 9" href="#"><img class="thumbnail img-fluid" src="https://www.bootdey.com/image/600x350/9400D3/000000"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Image 10" href="#"><img class="thumbnail img-fluid" src="https://www.bootdey.com/image/600x350/FF69B4/000000"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Image 11" href="#"><img class="thumbnail img-fluid" src="https://www.bootdey.com/image/600x350/ADD8E6/000000"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Image 12" href="#"><img class="thumbnail img-fluid" src="https://www.bootdey.com/image/600x350/E6E6FA/000000"></a></div>
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Image 13" href="#"><img class="thumbnail img-fluid" src="https://www.bootdey.com/image/600x350/B0C4DE/000000"></a></div>
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs" data-aos="fade-in">
+    <div class="container justify-content-center">
+      <h2>Gallery</h2>
     </div>
-    <hr>
+  </div><!-- End Breadcrumbs -->
+
+  <div class="container mt-5">
+    <div class="row">
+      <h3 class="text-center">Pictures Speak</h3>
+      <div class="row mt-3 mb-3">
+        <div class="col"><a title="Image 1" href="#"><img class="base thumbnail img-fluid"
+              src="assets/img/WhatsApp Image 2023-07-12 at 14.17.27.jpg"></a></div>
+        <div class="col "><a title="Image 2" href="#"><img class="thumbnail img-fluid"
+              src="assets/img/WhatsApp Image 2023-07-12 at 14.36.18.jpg"></a></div>
+        <div class="col"><a title="Image 3" href="#"><img class="thumbnail img-fluid"
+              src="assets/img/WhatsApp Image 2023-07-12 at 14.36.19.jpg"></a></div>
+      </div>
+
+      <div class="row">
+        <div class="col"><a title="Image 4" href="#"><img class="thumbnail img-fluid"
+              src="assets/img/WhatsApp Image 2023-07-12 at 16.50.08.jpg"></a></div>
+        <div class="col"><a title="Image 5" href="#"><img class="thumbnail img-fluid"
+              src="assets/img/WhatsApp Image 2023-07-12 at 16.48.25.jpg"></a></div>
+        <div class="col"><a title="Image 6" href="#"><img class="thumbnail img-fluid"
+              src="assets/img/WhatsApp Image 2023-07-12 at 15.09.48.jpg"></a></div>
+      </div>
+      <div class="row">
+        <div class="col"><a title="Image 8" href="#"><img class="thumbnail img-fluid"
+              src="assets/img/WhatsApp Image 2023-07-12 at 15.09.4.jpg"></a></div>
+        <div class="col"><a title="Image 9" href="#"><img class="thumbnail img-fluid"
+              src="assets/img/WhatsApp Image 2023-07-12 at 14.36.17.jpg"></a></div>
+      </div>
+    </div>
+
   </div>
-</div> -->
+  </div>
 
   <div class="modal" id="myModal" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
-          <h3 class="modal-title"></h3>
+
         </div>
         <div class="modal-body">
           <div id="modalCarousel" class="carousel">
@@ -133,6 +159,8 @@
         </div>
         <div class="modal-footer">
           <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+          <h5 class="modal-title"></h5>
         </div>
       </div>
     </div>
