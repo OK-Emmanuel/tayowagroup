@@ -57,7 +57,7 @@ body {
     visibility: hidden;
     opacity: 0;
     right: 15px;
-    bottom: 15px;
+    bottom: 100px;
     z-index: 996;
     background: var(--primary-color);
     width: 40px;

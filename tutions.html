@@ -44,12 +44,31 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li class="dropdown"><a href="about.html">About <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="news.html">News & Updates</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="who-we-are.html">Who We Are</a></li>
+            </ul>
+          </li>
           <li class="dropdown"><a href="">Classrooms <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="classroom-supplies.html">Classroom Supplies</a></li>
-              <li><a href="2s-classrom.html">2's Classroom</a></li>
+              <li class="dropdown"><a href="classroom-supplies.html">Primary School <i
+                    class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="classroom-supplies.html">Classroom Supplies</a></li>
+                  <li><a href="2s-classrom.html">2's Classroom</a></li>
+                  <li><a href="2s-classrom.html">3's Classroom</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="2s-classrom.html">Secondary School <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="js-classroom.html">JSS Classroom</a></li>
+                  <li><a href="ss-classroom.html">SS Classrooms</a></li>
+                  <li><a href="#">Extracurricular Activities</a></li>
+                </ul>
+              </li>
 
             </ul>
           </li>
@@ -60,7 +79,7 @@
             </ul>
           </li>
 
-          <li><a class="active" href="tutions.html">Tution Fees</a></li>
+          <li><a href="tutions.html">Tution Fees</a></li>
           <!-- <li><a href="gallery.html">Gallery</a></li> -->
           <li><a href="contact.html">Contact Us</a></li>
 
@@ -286,7 +305,14 @@
 
 
   </footer><!-- End Footer -->
-
+  <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+  <script>
+    var wa_btnSetting = {"btnColor":"#0d63fd","ctaText":"Talk to Us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"2348170699913","welcomeMessage":"Hello Tayowa Schools, I would like to speak with you. My name is ____","zIndex":999999,"btnColorScheme":"light"};
+    var wa_widgetSetting = {"title":"Tayowa Schools","subTitle":"Chat with us","headerBackgroundColor":"#a2157d","headerColorScheme":"light","greetingText":"Hi there! Welcome to Tayowa Schools \nWould you like to speak with us?","ctaText":"Start Chat","btnColor":"#c20755","cornerRadius":"50","welcomeMessage":"Hello","btnColorScheme":"light","brandImage":"https://res.cloudinary.com/djvolnu9s/image/upload/v1697620735/pry_xihzy6.png","darkHeaderColorScheme":{"title":"#333333","subTitle":"#4F4F4F"}};  
+    window.onload = () => {
+      _waEmbed(wa_btnSetting, wa_widgetSetting);
+    };
+  </script>
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
